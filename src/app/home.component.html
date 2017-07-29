@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+</head>
+<body>
+<div class="container">
+  <br/>
+  <strong>Principled Business Activity</strong>
+  <hr>
+
+  <form>
+    <div>
+      <label for="businessActivity">Detailed decription of the company's business activity</label>
+      <br/>
+      <textarea class="form-control" rows="5" id="businessActivity" [value]="name" (input)="name=$event.target.value" ></textarea>
+    </div>
+
+    <br/>
+    <button type="submit" [routerLink]="['index/next']" class="btn btn-primary pull-right">Complete Company Information</button>
+
+    <br/>
+
+
+  </form>
+
+  <br/>
+  <h1> {{name | json}}</h1>
+
+</div>
+
+</body>
+</html>
