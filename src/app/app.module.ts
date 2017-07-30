@@ -1,6 +1,6 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import {RoutingModule} from "./app.routing";
 import { AppComponent } from './app.component';
 import {HomeComponent} from "./home.component";
@@ -44,8 +44,6 @@ import {
   StyleModule
 } from '@angular/material';
 import {RouterModule} from "@angular/router";
-import {Home1Component} from "./home1.component";
-
 
 
 @NgModule({
@@ -96,7 +94,7 @@ import {Home1Component} from "./home1.component";
     HomeComponent,
     ScreenTwoComponent
   ],
-  bootstrap: [HomeComponent, AppComponent, ScreenTwoComponent]
+  bootstrap: [HomeComponent]
 })
 
 

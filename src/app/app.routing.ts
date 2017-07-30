@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: 'index/home', component: HomeComponent},
   {path: 'index/next', component: ScreenTwoComponent},
 
-
 ];
 
 @NgModule({
